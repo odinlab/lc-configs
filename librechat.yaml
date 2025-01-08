@@ -680,8 +680,8 @@ endpoints:
         default: [
           "openrouter/auto",
           "---FREE---",
-          "google/gemini-2.0-flash-exp:free",
-          "google/gemini-2.0-flash-thinking-exp:free",
+          #"google/gemini-2.0-flash-exp:free",
+          #"google/gemini-2.0-flash-thinking-exp:free",
           "google/gemma-2-9b-it:free",
           "gryphe/mythomax-l2-13b:free",
           "huggingfaceh4/zephyr-7b-beta:free",
@@ -894,7 +894,7 @@ endpoints:
           "x-ai/grok-vision-beta",
           "xwin-lm/xwin-lm-70b"
           ]
-        fetch: false
+        fetch: true
       dropParams: ["stop"]
       titleConvo: true
       titleModel: "gpt-3.5-turbo"
