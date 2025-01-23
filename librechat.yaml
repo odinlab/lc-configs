@@ -847,6 +847,7 @@ endpoints:
       baseURL: "https://openrouter.ai/api/v1"
       models:
         default: [
+          "deepseek/deepseek-r1",
           "openrouter/auto",
           "---FREE---",
           "google/gemma-2-9b-it:free",
