@@ -23,6 +23,9 @@ interface:
   termsOfService:
     externalUrl: 'https://librechat.ai/tos'
     openNewTab: true
+
+  # Retain temporary chats for 7 days (168 hours)
+  temporaryChatRetention: 168
  
 # Example Registration Object Structure (optional)
 # registration:
