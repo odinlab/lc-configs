@@ -1,3 +1,12 @@
+cp .env.example .env
+nano .env
+
+cp docker-compose.override.yml.example docker-compose.override.yml
+nano docker-compose.override.yml
+
+nano librechat.yaml
+
+
 ##=========
 ## .env
 ##=========
