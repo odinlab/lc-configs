@@ -1,0 +1,20 @@
+##=========
+## .env
+##=========
+
+CLOUDFLARE_TUNNEL_TOKEN=
+
+
+
+##=========
+## docker-compose.override.yml
+##=========
+
+# Cloudflare tunnel
+ services:
+   cloudflared:
+     image: cloudflare/cloudflared:latest
+     restart: unless-stopped
+     command: tunnel --no-autoupdate run --token ${CLOUDFLARE_TUNNEL_TOKEN}
+     environment:
+       - TUNNEL_TOKEN=${CLOUDFLARE_TUNNEL_TOKEN}
